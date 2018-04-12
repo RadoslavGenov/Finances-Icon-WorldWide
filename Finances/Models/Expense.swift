@@ -14,6 +14,24 @@ class Expense: NSManagedObject {
         let expense = Expense(context: context)
         expense.price = price
         expense.title = title
+        expense.createdAt = Date()
         return expense
+    }
+    
+    class func getLastMonth(in context: NSManagedObjectContext) throws -> [Expense]?{
+        let currentDate = Date()
+        var dateComponents = DateComponents()
+        
+        dateComponents.month = -1
+        let dateFrom = Calendar.current.date(byAdding: dateComponents, to: currentDate)
+        
+        dateComponents.month = -2
+        let dateTo = Calendar.current.date(byAdding: dateComponents, to: currentDate)
+        
+        let request: NSFetchRequest<Expense> = Expense.fetchRequest()
+        request.predicate = NSPredicate(format: "(%@ <= createdAt AND createdAt <= %@)", dateFrom! as NSDate, dateTo! as NSDate)
+        
+        let matches = try? context.fetch(request)
+        return matches
     }
 }

@@ -11,7 +11,7 @@
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Expense" positionX="-63" positionY="-18" width="128" height="90"/>
-        <element name="Income" positionX="-54" positionY="-9" width="128" height="90"/>
+        <element name="Expense" positionX="-387" positionY="-144" width="128" height="90"/>
+        <element name="Income" positionX="-54" positionY="9" width="128" height="90"/>
     </elements>
 </model>

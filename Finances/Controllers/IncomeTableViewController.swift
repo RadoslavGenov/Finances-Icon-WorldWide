@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class IncomeTableViewController: FetchedResultsTableViewController {
+class IncomeTableViewController: FetchedResultsTableViewController, UITextFieldDelegate {
     
     private var  container: NSPersistentContainer? = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer
     
@@ -44,7 +44,7 @@ class IncomeTableViewController: FetchedResultsTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Income", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: Identifiers.Income, for: indexPath)
         
         if let income = fetchedResultsController?.object(at: indexPath) {
             if let incomeCell = cell as? IncomeTableViewCell {
@@ -57,6 +57,76 @@ class IncomeTableViewController: FetchedResultsTableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let income = fetchedResultsController?.object(at: indexPath)
+        
+        self.startAlert(income)
+        
+        try? fetchedResultsController?.managedObjectContext.save()
+        
+        self.tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    @objc func addIncome(_ sender: UIBarButtonItem!){
+        self.addIncome()
+    }
+    
+    private func add(withTitle title: String, withPrice price: Double){
+        let context = fetchedResultsController?.managedObjectContext
+        _ = Income.addIncome(withTitle: title, withPrice: price, in: context!)
+        try? fetchedResultsController?.managedObjectContext.save()
+    }
+}
+
+extension IncomeTableViewController {
+    private func editIncome(_ income: Income?){
+        let alertController: UIAlertController = UIAlertController(title: "Edit Income", message: nil, preferredStyle: .alert)
+        
+        alertController.addTextField(configurationHandler: { (textField) in
+            textField.placeholder = "Enter New Title"
+        })
+        alertController.addTextField(configurationHandler: { (textField) in
+            textField.placeholder = "Enter New Price"
+            textField.delegate = self
+        })
+        
+        let saveAction = UIAlertAction(title: "Save", style: .default, handler: { (alert) in
+            income!.title = (alertController.textFields![0] as UITextField).text
+            income!.price = Double((alertController.textFields![1] as UITextField).text!)!
+        })
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: { (action) in })
+        
+        alertController.addAction(saveAction)
+        alertController.addAction(cancelAction)
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func addIncome() {
+        let alertController = UIAlertController(title: "Add New Income", message: nil, preferredStyle: .alert)
+        
+        alertController.addTextField(configurationHandler: { (textField) in
+            textField.placeholder = "Enter Title"
+        })
+        alertController.addTextField(configurationHandler: { (textField) in
+            textField.placeholder = "Enter Price"
+            textField.delegate = self
+        })
+        
+        let saveAction = UIAlertAction(title: "Save", style: .default, handler: { [weak self] (alert) in
+            let title = alertController.textFields![0] as UITextField
+            let price = alertController.textFields![1] as UITextField
+            self?.add(withTitle: title.text!, withPrice: Double(price.text!)!)
+        })
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: { (action) in })
+        
+        alertController.addAction(saveAction)
+        alertController.addAction(cancelAction)
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func startAlert(_ income: Income?){
         
         let actionSheetController: UIAlertController = UIAlertController(title: "Please select", message: nil, preferredStyle: .actionSheet)
         
@@ -77,62 +147,14 @@ class IncomeTableViewController: FetchedResultsTableViewController {
         actionSheetController.addAction(deleteActionButton)
         
         self.present(actionSheetController, animated: true, completion: nil)
-        
-        try? fetchedResultsController?.managedObjectContext.save()
-        
-        self.tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    private func editIncome(_ income: Income?){
-        let alertController = UIAlertController(title: "Edit New Income", message: nil, preferredStyle: .alert)
-        
-        alertController.addTextField(configurationHandler: { (textField) in
-            textField.placeholder = "Enter New Title"
-        })
-        alertController.addTextField(configurationHandler: { (textField) in
-            textField.placeholder = "Enter New Price"
-        })
-        
-        let saveAction = UIAlertAction(title: "Save", style: .default, handler: { (alert) in
-            income!.title = (alertController.textFields![0] as UITextField).text
-            income!.price = Double((alertController.textFields![1] as UITextField).text!)!
-        })
-        
-        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: { (action) in })
-        
-        alertController.addAction(saveAction)
-        alertController.addAction(cancelAction)
-        
-        self.present(alertController, animated: true,completion: nil)
-    }
-    
-    @objc func addIncome(_ sender: UIBarButtonItem!){
-        let alertController = UIAlertController(title: "Add New Income", message: nil, preferredStyle: .alert)
-        
-        alertController.addTextField(configurationHandler: { (textField) in
-            textField.placeholder = "Enter Title"
-        })
-        alertController.addTextField(configurationHandler: { (textField) in
-            textField.placeholder = "Enter Price"
-        })
-        
-        let saveAction = UIAlertAction(title: "Save", style: .default, handler: { [weak self] (alert) in
-            let title = alertController.textFields![0] as UITextField
-            let price = alertController.textFields![1] as UITextField
-            self?.add(withTitle: title.text!, withPrice: Double(price.text!)!)
-        })
-        
-        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: { (action) in })
-        
-        alertController.addAction(saveAction)
-        alertController.addAction(cancelAction)
-        
-        self.present(alertController, animated: true,completion: nil)
-    }
-    
-    private func add(withTitle title: String, withPrice price: Double){
-        let context = fetchedResultsController?.managedObjectContext
-        _ = Income.addIncome(withTitle: title, withPrice: price, in: context!)
-        try? fetchedResultsController?.managedObjectContext.save()
+    //textfield restriction
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let aSet = NSCharacterSet(charactersIn:"0123456789.").inverted
+        let compSepByCharInSet = string.components(separatedBy: aSet)
+        let numberFiltered = compSepByCharInSet.joined(separator: "")
+        return string == numberFiltered
     }
 }
+

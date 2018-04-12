@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BA11863620763A25009199BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA11863520763A25009199BD /* AppDelegate.swift */; };
-		BA11863820763A25009199BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA11863720763A25009199BD /* ViewController.swift */; };
-		BA11863E20763A25009199BD /* Finances.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA11863C20763A25009199BD /* Finances.xcdatamodeld */; };
+		BA11863820763A25009199BD /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA11863720763A25009199BD /* GeneralViewController.swift */; };
 		BA11864020763A27009199BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA11863F20763A27009199BD /* Assets.xcassets */; };
 		BA11864320763A27009199BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA11864120763A27009199BD /* LaunchScreen.storyboard */; };
 		BA11864E20763A27009199BD /* FinancesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA11864D20763A27009199BD /* FinancesTests.swift */; };
@@ -17,6 +16,7 @@
 		BA11866C20763E73009199BD /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA11866B20763E73009199BD /* Expense.swift */; };
 		BA11866E20763E93009199BD /* Income.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA11866D20763E93009199BD /* Income.swift */; };
 		BA32FCFF2077B43B00D5B169 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32FCFE2077B43B00D5B169 /* Identifiers.swift */; };
+		BA992A07207F854600E81166 /* Finances.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA992A04207F854600E81166 /* Finances.xcdatamodeld */; };
 		BABEF73E207777C900BECA29 /* ExpenseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF73D207777C900BECA29 /* ExpenseTableViewController.swift */; };
 		BABEF74020777F5600BECA29 /* FetchedResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF73F20777F5600BECA29 /* FetchedResultsTableViewController.swift */; };
 		BABEF7422077827700BECA29 /* ExpenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF7412077827700BECA29 /* ExpenseTableViewCell.swift */; };
@@ -46,8 +46,7 @@
 /* Begin PBXFileReference section */
 		BA11863220763A25009199BD /* Finances.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finances.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA11863520763A25009199BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA11863720763A25009199BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BA11863D20763A25009199BD /* Finances.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Finances.xcdatamodel; sourceTree = "<group>"; };
+		BA11863720763A25009199BD /* GeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
 		BA11863F20763A27009199BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA11864220763A27009199BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA11864420763A27009199BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +59,8 @@
 		BA11866B20763E73009199BD /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		BA11866D20763E93009199BD /* Income.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Income.swift; sourceTree = "<group>"; };
 		BA32FCFE2077B43B00D5B169 /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
+		BA992A05207F854600E81166 /* Finances.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Finances.xcdatamodel; sourceTree = "<group>"; };
+		BA992A06207F854600E81166 /* Finances2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Finances2.xcdatamodel; sourceTree = "<group>"; };
 		BABEF73D207777C900BECA29 /* ExpenseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTableViewController.swift; sourceTree = "<group>"; };
 		BABEF73F20777F5600BECA29 /* FetchedResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedResultsTableViewController.swift; sourceTree = "<group>"; };
 		BABEF7412077827700BECA29 /* ExpenseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTableViewCell.swift; sourceTree = "<group>"; };
@@ -119,10 +120,9 @@
 			children = (
 				BA11866620763A65009199BD /* Supporting Files */,
 				BA11864420763A27009199BD /* Info.plist */,
-				BA11863C20763A25009199BD /* Finances.xcdatamodeld */,
 				BAEBD200207A773500E50587 /* Main.storyboard */,
+				BA992A04207F854600E81166 /* Finances.xcdatamodeld */,
 				BA32FCFE2077B43B00D5B169 /* Identifiers.swift */,
-				BABEF74B20779D9B00BECA29 /* PageViewController.swift */,
 				BA11867120764648009199BD /* Views */,
 				BA11867220764652009199BD /* Controllers */,
 				BA11866F207645FB009199BD /* Models */,
@@ -179,7 +179,8 @@
 		BA11867220764652009199BD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BA11863720763A25009199BD /* ViewController.swift */,
+				BA11863720763A25009199BD /* GeneralViewController.swift */,
+				BABEF74B20779D9B00BECA29 /* PageViewController.swift */,
 				BABEF73D207777C900BECA29 /* ExpenseTableViewController.swift */,
 				BABEF74320778E0200BECA29 /* IncomeTableViewController.swift */,
 				BABEF73F20777F5600BECA29 /* FetchedResultsTableViewController.swift */,
@@ -322,14 +323,14 @@
 				BABEF7422077827700BECA29 /* ExpenseTableViewCell.swift in Sources */,
 				BABEF748207797BB00BECA29 /* IncomeTableViewCell.swift in Sources */,
 				BABEF74C20779D9B00BECA29 /* PageViewController.swift in Sources */,
-				BA11863820763A25009199BD /* ViewController.swift in Sources */,
+				BA11863820763A25009199BD /* GeneralViewController.swift in Sources */,
 				BABEF74420778E0200BECA29 /* IncomeTableViewController.swift in Sources */,
 				BA11863620763A25009199BD /* AppDelegate.swift in Sources */,
 				BA11866E20763E93009199BD /* Income.swift in Sources */,
+				BA992A07207F854600E81166 /* Finances.xcdatamodeld in Sources */,
 				BA32FCFF2077B43B00D5B169 /* Identifiers.swift in Sources */,
 				BABEF74020777F5600BECA29 /* FetchedResultsTableViewController.swift in Sources */,
 				BABEF73E207777C900BECA29 /* ExpenseTableViewController.swift in Sources */,
-				BA11863E20763A25009199BD /* Finances.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,12 +651,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		BA11863C20763A25009199BD /* Finances.xcdatamodeld */ = {
+		BA992A04207F854600E81166 /* Finances.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				BA11863D20763A25009199BD /* Finances.xcdatamodel */,
+				BA992A05207F854600E81166 /* Finances.xcdatamodel */,
+				BA992A06207F854600E81166 /* Finances2.xcdatamodel */,
 			);
-			currentVersion = BA11863D20763A25009199BD /* Finances.xcdatamodel */;
+			currentVersion = BA992A06207F854600E81166 /* Finances2.xcdatamodel */;
 			path = Finances.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
