@@ -11,7 +11,7 @@ import CoreData
 
 class GeneralViewController: UIViewController {
     
-    private var  container: NSPersistentContainer? = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer
+    private var container: NSPersistentContainer? = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer
     
     @IBOutlet weak var currentBalance: UILabel!
     @IBOutlet weak var currentIncome: UILabel!

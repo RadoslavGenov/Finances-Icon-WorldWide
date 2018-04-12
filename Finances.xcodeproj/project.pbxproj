@@ -16,7 +16,7 @@
 		BA11866C20763E73009199BD /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA11866B20763E73009199BD /* Expense.swift */; };
 		BA11866E20763E93009199BD /* Income.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA11866D20763E93009199BD /* Income.swift */; };
 		BA32FCFF2077B43B00D5B169 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32FCFE2077B43B00D5B169 /* Identifiers.swift */; };
-		BA992A07207F854600E81166 /* Finances.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA992A04207F854600E81166 /* Finances.xcdatamodeld */; };
+		BAA3AE6E207FB1B7003BF210 /* Finances.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BAA3AE6C207FB1B7003BF210 /* Finances.xcdatamodeld */; };
 		BABEF73E207777C900BECA29 /* ExpenseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF73D207777C900BECA29 /* ExpenseTableViewController.swift */; };
 		BABEF74020777F5600BECA29 /* FetchedResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF73F20777F5600BECA29 /* FetchedResultsTableViewController.swift */; };
 		BABEF7422077827700BECA29 /* ExpenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF7412077827700BECA29 /* ExpenseTableViewCell.swift */; };
@@ -59,8 +59,7 @@
 		BA11866B20763E73009199BD /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		BA11866D20763E93009199BD /* Income.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Income.swift; sourceTree = "<group>"; };
 		BA32FCFE2077B43B00D5B169 /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
-		BA992A05207F854600E81166 /* Finances.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Finances.xcdatamodel; sourceTree = "<group>"; };
-		BA992A06207F854600E81166 /* Finances2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Finances2.xcdatamodel; sourceTree = "<group>"; };
+		BAA3AE6D207FB1B7003BF210 /* Finances2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Finances2.xcdatamodel; sourceTree = "<group>"; };
 		BABEF73D207777C900BECA29 /* ExpenseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTableViewController.swift; sourceTree = "<group>"; };
 		BABEF73F20777F5600BECA29 /* FetchedResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedResultsTableViewController.swift; sourceTree = "<group>"; };
 		BABEF7412077827700BECA29 /* ExpenseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTableViewCell.swift; sourceTree = "<group>"; };
@@ -120,8 +119,8 @@
 			children = (
 				BA11866620763A65009199BD /* Supporting Files */,
 				BA11864420763A27009199BD /* Info.plist */,
+				BAA3AE6C207FB1B7003BF210 /* Finances.xcdatamodeld */,
 				BAEBD200207A773500E50587 /* Main.storyboard */,
-				BA992A04207F854600E81166 /* Finances.xcdatamodeld */,
 				BA32FCFE2077B43B00D5B169 /* Identifiers.swift */,
 				BA11867120764648009199BD /* Views */,
 				BA11867220764652009199BD /* Controllers */,
@@ -327,7 +326,7 @@
 				BABEF74420778E0200BECA29 /* IncomeTableViewController.swift in Sources */,
 				BA11863620763A25009199BD /* AppDelegate.swift in Sources */,
 				BA11866E20763E93009199BD /* Income.swift in Sources */,
-				BA992A07207F854600E81166 /* Finances.xcdatamodeld in Sources */,
+				BAA3AE6E207FB1B7003BF210 /* Finances.xcdatamodeld in Sources */,
 				BA32FCFF2077B43B00D5B169 /* Identifiers.swift in Sources */,
 				BABEF74020777F5600BECA29 /* FetchedResultsTableViewController.swift in Sources */,
 				BABEF73E207777C900BECA29 /* ExpenseTableViewController.swift in Sources */,
@@ -651,13 +650,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		BA992A04207F854600E81166 /* Finances.xcdatamodeld */ = {
+		BAA3AE6C207FB1B7003BF210 /* Finances.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				BA992A05207F854600E81166 /* Finances.xcdatamodel */,
-				BA992A06207F854600E81166 /* Finances2.xcdatamodel */,
+				BAA3AE6D207FB1B7003BF210 /* Finances2.xcdatamodel */,
 			);
-			currentVersion = BA992A06207F854600E81166 /* Finances2.xcdatamodel */;
+			currentVersion = BAA3AE6D207FB1B7003BF210 /* Finances2.xcdatamodel */;
 			path = Finances.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

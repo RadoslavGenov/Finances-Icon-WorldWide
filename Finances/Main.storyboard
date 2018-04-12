@@ -75,109 +75,98 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Balance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOf-uT-qJY">
-                                <rect key="frame" x="37" y="64" width="135" height="21"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Expenses:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2p-Pq-5Md">
-                                <rect key="frame" x="37" y="159" width="164" height="21"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1X-UX-T31">
-                                <rect key="frame" x="277" y="63" width="61" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expenses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKg-LJ-Imf">
-                                <rect key="frame" x="271" y="159" width="74" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Income" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WoV-ug-Yx3">
-                                <rect key="frame" x="279" y="249" width="57" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Income:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sd9-P3-NJJ">
-                                <rect key="frame" x="37" y="249" width="130" height="21"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Month Balance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gwk-UO-hjO">
-                                <rect key="frame" x="37" y="330" width="163" height="21"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Month Expenses:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPR-p3-Mer">
-                                <rect key="frame" x="37" y="425" width="164" height="21"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0i-eg-BrU">
-                                <rect key="frame" x="277" y="329" width="61" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expenses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rs0-nl-9AZ">
-                                <rect key="frame" x="271" y="425" width="74" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Income" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xni-mE-yRL">
-                                <rect key="frame" x="279" y="515" width="57" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Month Income:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1i3-fA-J6b">
-                                <rect key="frame" x="37" y="515" width="158" height="21"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="CJG-dx-AKZ">
+                                <rect key="frame" x="23.5" y="132" width="329.5" height="423"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="dD3-iT-0IG">
+                                        <rect key="frame" x="0.0" y="0.0" width="176" height="423"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Balance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOf-uT-qJY">
+                                                <rect key="frame" x="0.0" y="0.0" width="134.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Expenses:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2p-Pq-5Md">
+                                                <rect key="frame" x="0.0" y="80.5" width="147.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Income:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sd9-P3-NJJ">
+                                                <rect key="frame" x="0.0" y="161" width="129.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Month Balance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gwk-UO-hjO">
+                                                <rect key="frame" x="0.0" y="241.5" width="163" height="20.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Month Expenses:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPR-p3-Mer">
+                                                <rect key="frame" x="0.0" y="322" width="176" height="20.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Month Income:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1i3-fA-J6b">
+                                                <rect key="frame" x="0.0" y="402.5" width="158" height="20.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="TpG-vp-QLd">
+                                        <rect key="frame" x="256" y="0.0" width="73.5" height="423"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1X-UX-T31">
+                                                <rect key="frame" x="0.0" y="0.0" width="73.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expenses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKg-LJ-Imf">
+                                                <rect key="frame" x="0.0" y="80.5" width="73.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Income" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WoV-ug-Yx3">
+                                                <rect key="frame" x="0.0" y="161" width="73.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0i-eg-BrU">
+                                                <rect key="frame" x="0.0" y="241.5" width="73.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expenses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rs0-nl-9AZ">
+                                                <rect key="frame" x="0.0" y="322" width="73.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Income" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xni-mE-yRL">
+                                                <rect key="frame" x="0.0" y="402.5" width="73.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="XPR-p3-Mer" firstAttribute="trailing" secondItem="b2p-Pq-5Md" secondAttribute="trailing" id="46t-sf-Oby"/>
-                            <constraint firstItem="1i3-fA-J6b" firstAttribute="baseline" secondItem="Xni-mE-yRL" secondAttribute="baseline" id="47e-ib-tjo"/>
-                            <constraint firstItem="H0i-eg-BrU" firstAttribute="trailing" secondItem="W1X-UX-T31" secondAttribute="trailing" id="4aS-U2-gPx"/>
-                            <constraint firstItem="rs0-nl-9AZ" firstAttribute="trailing" secondItem="QKg-LJ-Imf" secondAttribute="trailing" id="AKf-l5-nco"/>
-                            <constraint firstItem="Gwk-UO-hjO" firstAttribute="leading" secondItem="Sd9-P3-NJJ" secondAttribute="leading" id="Chw-7Y-xVq"/>
-                            <constraint firstItem="hOf-uT-qJY" firstAttribute="leading" secondItem="b2p-Pq-5Md" secondAttribute="leading" id="G0y-gJ-i5n"/>
-                            <constraint firstItem="Sd9-P3-NJJ" firstAttribute="baseline" secondItem="WoV-ug-Yx3" secondAttribute="baseline" id="GWC-hX-Tvm"/>
-                            <constraint firstItem="H0i-eg-BrU" firstAttribute="top" secondItem="WoV-ug-Yx3" secondAttribute="bottom" constant="59" id="Hft-gZ-ajE"/>
-                            <constraint firstItem="rs0-nl-9AZ" firstAttribute="leading" secondItem="QKg-LJ-Imf" secondAttribute="leading" id="L3m-Np-5OD"/>
-                            <constraint firstItem="XPR-p3-Mer" firstAttribute="leading" secondItem="1i3-fA-J6b" secondAttribute="leading" id="MOQ-NS-Ydw"/>
-                            <constraint firstItem="H0i-eg-BrU" firstAttribute="leading" secondItem="W1X-UX-T31" secondAttribute="leading" id="PaB-5b-VuI"/>
-                            <constraint firstItem="bPD-T3-ldz" firstAttribute="trailing" secondItem="W1X-UX-T31" secondAttribute="trailing" constant="37" id="RVz-jH-MrH"/>
-                            <constraint firstItem="Gwk-UO-hjO" firstAttribute="leading" secondItem="XPR-p3-Mer" secondAttribute="leading" id="Rsx-SH-tHt"/>
-                            <constraint firstItem="QKg-LJ-Imf" firstAttribute="centerX" secondItem="WoV-ug-Yx3" secondAttribute="centerX" id="Zo0-tD-eqq"/>
-                            <constraint firstItem="hOf-uT-qJY" firstAttribute="leading" secondItem="bPD-T3-ldz" secondAttribute="leading" constant="37" id="eqg-Xj-Ruu"/>
-                            <constraint firstItem="Gwk-UO-hjO" firstAttribute="top" secondItem="Sd9-P3-NJJ" secondAttribute="bottom" constant="60" id="fKN-jz-0bO"/>
-                            <constraint firstItem="b2p-Pq-5Md" firstAttribute="top" secondItem="hOf-uT-qJY" secondAttribute="bottom" constant="74" id="g8c-Or-xM7"/>
-                            <constraint firstItem="W1X-UX-T31" firstAttribute="centerX" secondItem="QKg-LJ-Imf" secondAttribute="centerX" id="mWp-2y-b84"/>
-                            <constraint firstItem="QKg-LJ-Imf" firstAttribute="leading" secondItem="b2p-Pq-5Md" secondAttribute="trailing" constant="70" id="o4H-AT-LBn"/>
-                            <constraint firstItem="b2p-Pq-5Md" firstAttribute="leading" secondItem="Sd9-P3-NJJ" secondAttribute="leading" id="rUc-c7-sd5"/>
-                            <constraint firstItem="Sd9-P3-NJJ" firstAttribute="top" secondItem="b2p-Pq-5Md" secondAttribute="bottom" constant="69" id="rqO-Br-j5H"/>
-                            <constraint firstItem="Xni-mE-yRL" firstAttribute="leading" secondItem="WoV-ug-Yx3" secondAttribute="leading" id="stx-uC-cvM"/>
-                            <constraint firstItem="W1X-UX-T31" firstAttribute="top" secondItem="bPD-T3-ldz" secondAttribute="top" constant="43" id="uDv-iv-NIL"/>
-                            <constraint firstItem="b2p-Pq-5Md" firstAttribute="baseline" secondItem="QKg-LJ-Imf" secondAttribute="baseline" id="uHB-d2-iuP"/>
-                            <constraint firstItem="1i3-fA-J6b" firstAttribute="top" secondItem="XPR-p3-Mer" secondAttribute="bottom" constant="69" id="uac-nM-jcE"/>
-                            <constraint firstItem="XPR-p3-Mer" firstAttribute="baseline" secondItem="rs0-nl-9AZ" secondAttribute="baseline" id="wh6-6e-m7I"/>
-                            <constraint firstItem="XPR-p3-Mer" firstAttribute="top" secondItem="Gwk-UO-hjO" secondAttribute="bottom" constant="74" id="y45-lC-UXa"/>
-                            <constraint firstItem="hOf-uT-qJY" firstAttribute="top" secondItem="bPD-T3-ldz" secondAttribute="top" constant="44" id="z86-nS-l0n"/>
+                            <constraint firstItem="CJG-dx-AKZ" firstAttribute="centerX" secondItem="bPD-T3-ldz" secondAttribute="centerX" id="KFR-Pn-T6c"/>
+                            <constraint firstItem="CJG-dx-AKZ" firstAttribute="centerY" secondItem="bPD-T3-ldz" secondAttribute="centerY" id="dsO-Ob-Tdz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bPD-T3-ldz"/>
                     </view>
