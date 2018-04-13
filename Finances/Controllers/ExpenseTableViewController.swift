@@ -89,8 +89,13 @@ extension ExpenseTableViewController {
         })
         
         let saveAction = UIAlertAction(title: NSLocalizedString("Save", comment: ""), style: .default, handler: { (alert) in
-            expense!.title = (alertController.textFields![0] as UITextField).text
-            expense!.price = Double((alertController.textFields![1] as UITextField).text!)!
+            let fieldTitle = (alertController.textFields![0] as UITextField).text
+            let fieldPrice = (alertController.textFields![1] as UITextField).text
+            // Check for empty fields
+            if !((fieldTitle?.isEmpty)!) && !((fieldPrice?.isEmpty)!) {
+                expense!.title = fieldTitle
+                expense!.price = Double(fieldPrice!)!
+            }
         })
         
         let cancelAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .default, handler: { (action) in })
@@ -113,9 +118,12 @@ extension ExpenseTableViewController {
         })
         
         let saveAction = UIAlertAction(title: NSLocalizedString("Save", comment: ""), style: .default, handler: { [weak self] (alert) in
-            let title = alertController.textFields![0] as UITextField
-            let price = alertController.textFields![1] as UITextField
-            self?.add(withTitle: title.text!, withPrice: Double(price.text!)!)
+            let fieldTitle = (alertController.textFields![0] as UITextField).text
+            let fieldPrice = (alertController.textFields![1] as UITextField).text
+            // Check for empty fields
+            if !((fieldTitle?.isEmpty)!) && !((fieldPrice?.isEmpty)!) {
+                self?.add(withTitle: fieldTitle!, withPrice: Double(fieldPrice!)!)
+            }
         })
         
         let cancelAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .default, handler: { (action) in })
