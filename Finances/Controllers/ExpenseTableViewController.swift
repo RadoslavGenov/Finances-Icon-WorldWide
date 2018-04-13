@@ -78,22 +78,22 @@ class ExpenseTableViewController: FetchedResultsTableViewController, UITextField
 
 extension ExpenseTableViewController {
     private func editExpense(_ expense: Expense?){
-        let alertController: UIAlertController = UIAlertController(title: "Edit Expense", message: nil, preferredStyle: .alert)
+        let alertController: UIAlertController = UIAlertController(title: NSLocalizedString("Edit Expense", comment: ""), message: nil, preferredStyle: .alert)
         
         alertController.addTextField(configurationHandler: { (textField) in
-            textField.placeholder = "Enter New Title"
+            textField.placeholder = NSLocalizedString("Enter New Title", comment: "")
         })
         alertController.addTextField(configurationHandler: { (textField) in
-            textField.placeholder = "Enter New Price"
+            textField.placeholder = NSLocalizedString("Enter New Price", comment: "")
             textField.delegate = self
         })
         
-        let saveAction = UIAlertAction(title: "Save", style: .default, handler: { (alert) in
+        let saveAction = UIAlertAction(title: NSLocalizedString("Save", comment: ""), style: .default, handler: { (alert) in
             expense!.title = (alertController.textFields![0] as UITextField).text
             expense!.price = Double((alertController.textFields![1] as UITextField).text!)!
         })
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: { (action) in })
+        let cancelAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .default, handler: { (action) in })
         
         alertController.addAction(saveAction)
         alertController.addAction(cancelAction)
@@ -102,23 +102,23 @@ extension ExpenseTableViewController {
     }
     
     func addExpense() {
-        let alertController = UIAlertController(title: "Add New Expense", message: nil, preferredStyle: .alert)
+        let alertController = UIAlertController(title: NSLocalizedString("Add New Expense", comment: ""), message: nil, preferredStyle: .alert)
         
         alertController.addTextField(configurationHandler: { (textField) in
-            textField.placeholder = "Enter Title"
+            textField.placeholder = NSLocalizedString("Enter Title", comment: "")
         })
         alertController.addTextField(configurationHandler: { (textField) in
-            textField.placeholder = "Enter Price"
+            textField.placeholder = NSLocalizedString("Enter Price", comment: "")
             textField.delegate = self
         })
         
-        let saveAction = UIAlertAction(title: "Save", style: .default, handler: { [weak self] (alert) in
+        let saveAction = UIAlertAction(title: NSLocalizedString("Save", comment: ""), style: .default, handler: { [weak self] (alert) in
             let title = alertController.textFields![0] as UITextField
             let price = alertController.textFields![1] as UITextField
             self?.add(withTitle: title.text!, withPrice: Double(price.text!)!)
         })
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: { (action) in })
+        let cancelAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .default, handler: { (action) in })
         
         alertController.addAction(saveAction)
         alertController.addAction(cancelAction)
@@ -128,19 +128,19 @@ extension ExpenseTableViewController {
     
     func startAlert(_ expense: Expense?){
         
-        let actionSheetController: UIAlertController = UIAlertController(title: "Please select", message: nil, preferredStyle: .actionSheet)
+        let actionSheetController: UIAlertController = UIAlertController(title: NSLocalizedString("Please Select", comment: ""), message: nil, preferredStyle: .actionSheet)
         
-        let cancelActionButton = UIAlertAction(title: "Cancel", style: .cancel)
+        let cancelActionButton = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .cancel)
         
         actionSheetController.addAction(cancelActionButton)
         
-        let editActionButton = UIAlertAction(title: "Edit", style: .default)
+        let editActionButton = UIAlertAction(title: NSLocalizedString("Edit", comment: ""), style: .default)
         { [weak self] _ in
             self?.editExpense(expense)
         }
         actionSheetController.addAction(editActionButton)
         
-        let deleteActionButton = UIAlertAction(title: "Delete", style: .default)
+        let deleteActionButton = UIAlertAction(title: NSLocalizedString("Delete", comment: ""), style: .default)
         { [weak self] _ in
             self?.fetchedResultsController?.managedObjectContext.delete(expense!)
         }

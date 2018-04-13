@@ -17,13 +17,14 @@
 		BA11866E20763E93009199BD /* Income.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA11866D20763E93009199BD /* Income.swift */; };
 		BA32FCFF2077B43B00D5B169 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32FCFE2077B43B00D5B169 /* Identifiers.swift */; };
 		BAA3AE6E207FB1B7003BF210 /* Finances.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BAA3AE6C207FB1B7003BF210 /* Finances.xcdatamodeld */; };
+		BAA3AE71207FB927003BF210 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAA3AE73207FB927003BF210 /* Localizable.strings */; };
+		BAA3AE7B2080A361003BF210 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA3AE7D2080A361003BF210 /* Main.storyboard */; };
 		BABEF73E207777C900BECA29 /* ExpenseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF73D207777C900BECA29 /* ExpenseTableViewController.swift */; };
 		BABEF74020777F5600BECA29 /* FetchedResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF73F20777F5600BECA29 /* FetchedResultsTableViewController.swift */; };
 		BABEF7422077827700BECA29 /* ExpenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF7412077827700BECA29 /* ExpenseTableViewCell.swift */; };
 		BABEF74420778E0200BECA29 /* IncomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF74320778E0200BECA29 /* IncomeTableViewController.swift */; };
 		BABEF748207797BB00BECA29 /* IncomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF747207797BB00BECA29 /* IncomeTableViewCell.swift */; };
 		BABEF74C20779D9B00BECA29 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF74B20779D9B00BECA29 /* PageViewController.swift */; };
-		BAEBD201207A773500E50587 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEBD200207A773500E50587 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,13 +61,17 @@
 		BA11866D20763E93009199BD /* Income.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Income.swift; sourceTree = "<group>"; };
 		BA32FCFE2077B43B00D5B169 /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
 		BAA3AE6D207FB1B7003BF210 /* Finances2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Finances2.xcdatamodel; sourceTree = "<group>"; };
+		BAA3AE74207FB953003BF210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BAA3AE752080931A003BF210 /* bg */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bg; path = bg.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		BAA3AE762080931A003BF210 /* bg */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bg; path = bg.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BAA3AE7C2080A361003BF210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BAA3AE7F2080A3D5003BF210 /* bg */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bg; path = bg.lproj/Main.strings; sourceTree = "<group>"; };
 		BABEF73D207777C900BECA29 /* ExpenseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTableViewController.swift; sourceTree = "<group>"; };
 		BABEF73F20777F5600BECA29 /* FetchedResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedResultsTableViewController.swift; sourceTree = "<group>"; };
 		BABEF7412077827700BECA29 /* ExpenseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTableViewCell.swift; sourceTree = "<group>"; };
 		BABEF74320778E0200BECA29 /* IncomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeTableViewController.swift; sourceTree = "<group>"; };
 		BABEF747207797BB00BECA29 /* IncomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeTableViewCell.swift; sourceTree = "<group>"; };
 		BABEF74B20779D9B00BECA29 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
-		BAEBD200207A773500E50587 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,11 +125,12 @@
 				BA11866620763A65009199BD /* Supporting Files */,
 				BA11864420763A27009199BD /* Info.plist */,
 				BAA3AE6C207FB1B7003BF210 /* Finances.xcdatamodeld */,
-				BAEBD200207A773500E50587 /* Main.storyboard */,
+				BAA3AE7D2080A361003BF210 /* Main.storyboard */,
 				BA32FCFE2077B43B00D5B169 /* Identifiers.swift */,
 				BA11867120764648009199BD /* Views */,
 				BA11867220764652009199BD /* Controllers */,
 				BA11866F207645FB009199BD /* Models */,
+				BAA3AE73207FB927003BF210 /* Localizable.strings */,
 			);
 			path = Finances;
 			sourceTree = "<group>";
@@ -178,8 +184,8 @@
 		BA11867220764652009199BD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BA11863720763A25009199BD /* GeneralViewController.swift */,
 				BABEF74B20779D9B00BECA29 /* PageViewController.swift */,
+				BA11863720763A25009199BD /* GeneralViewController.swift */,
 				BABEF73D207777C900BECA29 /* ExpenseTableViewController.swift */,
 				BABEF74320778E0200BECA29 /* IncomeTableViewController.swift */,
 				BABEF73F20777F5600BECA29 /* FetchedResultsTableViewController.swift */,
@@ -273,6 +279,7 @@
 			knownRegions = (
 				en,
 				Base,
+				bg,
 			);
 			mainGroup = BA11862920763A25009199BD;
 			productRefGroup = BA11863320763A25009199BD /* Products */;
@@ -291,7 +298,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAEBD201207A773500E50587 /* Main.storyboard in Resources */,
+				BAA3AE7B2080A361003BF210 /* Main.storyboard in Resources */,
+				BAA3AE71207FB927003BF210 /* Localizable.strings in Resources */,
 				BA11864320763A27009199BD /* LaunchScreen.storyboard in Resources */,
 				BA11864020763A27009199BD /* Assets.xcassets in Resources */,
 			);
@@ -369,8 +377,27 @@
 			isa = PBXVariantGroup;
 			children = (
 				BA11864220763A27009199BD /* Base */,
+				BAA3AE752080931A003BF210 /* bg */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BAA3AE73207FB927003BF210 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAA3AE74207FB953003BF210 /* Base */,
+				BAA3AE762080931A003BF210 /* bg */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		BAA3AE7D2080A361003BF210 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAA3AE7C2080A361003BF210 /* Base */,
+				BAA3AE7F2080A3D5003BF210 /* bg */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -380,6 +407,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -427,7 +455,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -440,6 +468,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -481,7 +510,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;

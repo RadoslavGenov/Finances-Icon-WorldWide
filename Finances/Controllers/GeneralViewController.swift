@@ -21,15 +21,15 @@ class GeneralViewController: UIViewController {
     @IBOutlet weak var lastMonthExpenses: UILabel!
     @IBOutlet weak var lastMonthIncome: UILabel!
     
-    private var expenses: [Expense]?
-    private var income: [Income]?
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         updateUI()
     }
     
     private func updateUI(){
+        var expenses: [Expense]?
+        var income: [Income]?
+        
         if let context = container?.viewContext {
             if let exp = try? context.fetch(Expense.fetchRequest()) {
                 expenses = exp as? [Expense]
@@ -39,15 +39,15 @@ class GeneralViewController: UIViewController {
             }
         }
     
-        if !(income?.isEmpty)! && !(expenses?.isEmpty)! {
+        if !(income?.isEmpty)! || !(expenses?.isEmpty)! {
             let values = calculateBalance(expenses: expenses, income: income)
             currentExpenses.text = values.0
             currentIncome.text = values.1
             currentBalance.text = values.2
         } else {
-            currentExpenses.text = "No Data"
-            currentIncome.text = "No Data"
-            currentBalance.text = "No Data"
+            currentExpenses.text = NSLocalizedString("No Data", comment: "")
+            currentIncome.text = NSLocalizedString("No Data", comment: "")
+            currentBalance.text = NSLocalizedString("No Data", comment: "")
         }
         
         if let context = container?.viewContext{
@@ -59,15 +59,15 @@ class GeneralViewController: UIViewController {
             }
         }
         
-        if !(income?.isEmpty)! && !(expenses?.isEmpty)! {
+        if !(income?.isEmpty)! || !(expenses?.isEmpty)! {
             let values = calculateBalance(expenses: expenses, income: income)
             lastMonthExpenses.text = values.0
             lastMonthIncome.text = values.1
             lastMonthBalance.text = values.2
         } else {
-            lastMonthExpenses.text = "No Data"
-            lastMonthIncome.text = "No Data"
-            lastMonthBalance.text = "No Data"
+            lastMonthExpenses.text = NSLocalizedString("No Data", comment: "")
+            lastMonthIncome.text = NSLocalizedString("No Data", comment: "")
+            lastMonthBalance.text = NSLocalizedString("No Data", comment: "")
         }
     }
     

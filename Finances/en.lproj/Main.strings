@@ -1,0 +1,57 @@
+
+/* Class = "UILabel"; text = "Last Month Income:"; ObjectID = "1i3-fA-J6b"; */
+"1i3-fA-J6b.text" = "Last Month Income:";
+
+/* Class = "UILabel"; text = "title"; ObjectID = "Fcd-y5-LXv"; */
+"Fcd-y5-LXv.text" = "title";
+
+/* Class = "UILabel"; text = "Last Month Balance:"; ObjectID = "Gwk-UO-hjO"; */
+"Gwk-UO-hjO.text" = "Last Month Balance:";
+
+/* Class = "UILabel"; text = "Balance"; ObjectID = "H0i-eg-BrU"; */
+"H0i-eg-BrU.text" = "Balance";
+
+/* Class = "UILabel"; text = "title"; ObjectID = "JaX-Jb-U55"; */
+"JaX-Jb-U55.text" = "title";
+
+/* Class = "UILabel"; text = "Expenses"; ObjectID = "QKg-LJ-Imf"; */
+"QKg-LJ-Imf.text" = "Expenses";
+
+/* Class = "UILabel"; text = "Current Income:"; ObjectID = "Sd9-P3-NJJ"; */
+"Sd9-P3-NJJ.text" = "Current Income:";
+
+/* Class = "UILabel"; text = "Balance"; ObjectID = "W1X-UX-T31"; */
+"W1X-UX-T31.text" = "Balance";
+
+/* Class = "UILabel"; text = "Income"; ObjectID = "WoV-ug-Yx3"; */
+"WoV-ug-Yx3.text" = "Income";
+
+/* Class = "UILabel"; text = "Last Month Expenses:"; ObjectID = "XPR-p3-Mer"; */
+"XPR-p3-Mer.text" = "Last Month Expenses:";
+
+/* Class = "UILabel"; text = "Income"; ObjectID = "Xni-mE-yRL"; */
+"Xni-mE-yRL.text" = "Income";
+
+/* Class = "UILabel"; text = "Current Expenses:"; ObjectID = "b2p-Pq-5Md"; */
+"b2p-Pq-5Md.text" = "Current Expenses:";
+
+/* Class = "UITableViewController"; title = "Expenses"; ObjectID = "bJQ-PY-xcg"; */
+"bJQ-PY-xcg.title" = "Expenses";
+
+/* Class = "UITableViewController"; title = "Income"; ObjectID = "fV7-UU-3ND"; */
+"fV7-UU-3ND.title" = "Income";
+
+/* Class = "UILabel"; text = "Current Balance:"; ObjectID = "hOf-uT-qJY"; */
+"hOf-uT-qJY.text" = "Current Balance:";
+
+/* Class = "UILabel"; text = "price"; ObjectID = "ifS-Z2-ixk"; */
+"ifS-Z2-ixk.text" = "price";
+
+/* Class = "UILabel"; text = "price"; ObjectID = "lEp-D4-4Nm"; */
+"lEp-D4-4Nm.text" = "price";
+
+/* Class = "UILabel"; text = "Expenses"; ObjectID = "rs0-nl-9AZ"; */
+"rs0-nl-9AZ.text" = "Expenses";
+
+/* Class = "UIViewController"; title = "General"; ObjectID = "wnf-Wz-iUy"; */
+"wnf-Wz-iUy.title" = "General";

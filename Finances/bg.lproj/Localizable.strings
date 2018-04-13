@@ -1,0 +1,26 @@
+/* 
+  Localization.strings
+  Finances
+
+  Created by Radoka on 4/12/18.
+  Copyright © 2018 radoslav.genov.1992. All rights reserved.
+*/
+
+"No Data" = "Няма данни";
+"Add" = "Добави";
+"Edit Expense" = "Редактиране на разходите";
+"Enter New Title" = "Добави Нова Заглавие";
+"Enter New Price" = "Добави Нова Цена";
+"Save" = "Запази";
+"Cancel" = "Отмяна";
+"Add New Expense" = "Добави Нов Разход";
+"Enter Title" = "Добави Заглавие";
+"Enter Price" = "Добави Цена";
+"Please Select" = "Моля Избери";
+"Edit" = "Редактиране";
+"Delete" = "Изтриване";
+"Edit Income" = "Редактиране на приходи";
+"Add New Income" = "Добави Нов Приход";
+"General" = "Общо";
+"Income" = "Приходи";
+"Expenses" = "Разходи";

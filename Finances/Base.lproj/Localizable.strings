@@ -1,0 +1,27 @@
+/* 
+  Localization.strings
+  Finances
+
+  Created by Radoka on 4/12/18.
+  Copyright © 2018 radoslav.genov.1992. All rights reserved.
+*/
+
+"No Data" = "No Data";
+"Add" = "Add";
+"Edit Expense" = "Edit Expense";
+"Enter New Title" = "Enter New Title";
+"Enter New Price" = "Enter New Price";
+"Save" = "Save";
+"Cancel" = "Cancel";
+"Add New Expense" = "Add New Expense";
+"Enter Title" = "Enter Title";
+"Enter Price" = "Enter Price";
+"Please Select" = "Please Select";
+"Edit" = "Edit";
+"Delete" = "Delete";
+"Edit Income" = "Edit Income";
+"Add New Income" = "Add New Income";
+"General" = "General";
+"Income" = "Income";
+"Expense" = "Expense";
+

@@ -33,7 +33,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate {
         self.delegate   = self
         
         self.navigationController!.navigationBar.barTintColor = UIColor.blue
-        self.navigationItem.title = Identifiers.General
+        self.navigationItem.title = NSLocalizedString(Identifiers.General, comment: "")
 
         setViewControllers([pages[1]], direction: .forward, animated: true, completion: nil)
     }
@@ -50,18 +50,18 @@ extension PageViewController: UIPageViewControllerDataSource
             let arrayIndex = pages.index(of: firstViewController) {
             switch arrayIndex {
             case 0:
-                self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: pages[0], action: #selector(ExpenseTableViewController.addExpense(_:)))
-                self.navigationController!.navigationBar.topItem!.title = Identifiers.Expense
+                self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Add", comment: ""), style: .plain, target: pages[0], action: #selector(ExpenseTableViewController.addExpense(_:)))
+                self.navigationController!.navigationBar.topItem!.title = NSLocalizedString(Identifiers.Expense, comment: "")
                 self.navigationController!.navigationBar.barTintColor = UIColor.red
                 break
             case 1:
                 self.navigationItem.rightBarButtonItem = nil
-                self.navigationController!.navigationBar.topItem!.title = Identifiers.General
+                self.navigationController!.navigationBar.topItem!.title = NSLocalizedString(Identifiers.General, comment: "")
                 self.navigationController!.navigationBar.barTintColor = UIColor.blue
                 break
             case 2:
-                self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: pages[2], action: #selector(IncomeTableViewController.addIncome(_:)))
-                self.navigationController!.navigationBar.topItem!.title = Identifiers.Income
+                self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Add", comment: ""), style: .plain, target: pages[2], action: #selector(IncomeTableViewController.addIncome(_:)))
+                self.navigationController!.navigationBar.topItem!.title = NSLocalizedString(Identifiers.Income, comment: "")
                 self.navigationController!.navigationBar.barTintColor = UIColor.green
                 break
             default:
