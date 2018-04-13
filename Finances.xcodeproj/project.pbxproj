@@ -66,6 +66,7 @@
 		BAA3AE762080931A003BF210 /* bg */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bg; path = bg.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BAA3AE7C2080A361003BF210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BAA3AE7F2080A3D5003BF210 /* bg */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bg; path = bg.lproj/Main.strings; sourceTree = "<group>"; };
+		BAA3AE822080A76C003BF210 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BABEF73D207777C900BECA29 /* ExpenseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTableViewController.swift; sourceTree = "<group>"; };
 		BABEF73F20777F5600BECA29 /* FetchedResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedResultsTableViewController.swift; sourceTree = "<group>"; };
 		BABEF7412077827700BECA29 /* ExpenseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTableViewCell.swift; sourceTree = "<group>"; };
@@ -387,6 +388,7 @@
 			children = (
 				BAA3AE74207FB953003BF210 /* Base */,
 				BAA3AE762080931A003BF210 /* bg */,
+				BAA3AE822080A76C003BF210 /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
